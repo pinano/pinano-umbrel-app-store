@@ -2,12 +2,12 @@ manifestVersion: 1
 id: pinano-podsync
 name: Podsync
 tagline: "Turn YouTube feeds into downloadable podcasts"
-icon: "https://upload.wikimedia.org/wikipedia/commons/e/e7/Podcasts_%28iOS%29.svg" # Optional, include if you have an icon
-version: "2.3.0" # Use the latest Podsync version or your preferred one
+icon: "https://upload.wikimedia.org/wikipedia/commons/e/e7/Podcasts_%28iOS%29.svg"
+version: "1.0"
 category: "Media"
 port: 8145
 description: >-
-  Podsync is a tool that converts video feeds (like YouTube) into downloadable audio files in podcast format. 
+  Podsync is a tool that converts video feeds (like YouTube) into downloadable audio files in podcast format.
 
   Configure your feeds and access the generated files from your local storage.
 developer: Pinano

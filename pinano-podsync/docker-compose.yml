@@ -8,8 +8,8 @@ services:
     image: tdeutsch/podsync:latest
     init: true
     volumes:
-      - ${APP_DATA_DIR}/config/config.toml:/app/config.toml
-      - ${UMBREL_ROOT}/home/Downloads/podsync:/app/data
+      - ${UMBREL_ROOT}/home/Downloads/podsync/config.toml:/app/config.toml
+      - ${UMBREL_ROOT}/home/Downloads/podsync/data:/app/data
     restart: on-failure
     stop_grace_period: 1m
     container_name: pinano-podsync_server_1
