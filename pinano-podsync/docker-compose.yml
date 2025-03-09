@@ -2,9 +2,10 @@ services:
   app_proxy:
     environment:
       APP_PORT: 8145 # Internal port for the Podsync API (optional)
-      APP_ID: podsync
+      APP_ID: pinano-podsync_1
+      APP_HOST: pinano-podsync_1
 
-  podsync:
+  server:
     image: tdeutsch/podsync:latest # image for ARM
     restart: on-failure
     volumes:
