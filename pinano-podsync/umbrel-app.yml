@@ -1,0 +1,16 @@
+manifestVersion: 1
+id: podsync
+name: Podsync
+tagline: "Turn YouTube feeds into downloadable podcasts"
+icon: "icon.svg" # Optional, include if you have an icon
+version: "2.3.0" # Use the latest Podsync version or your preferred one
+port: 8145 # Default Podsync port (optional if not exposing the API)
+description:
+  short: "Generate podcasts from YouTube and other feeds."
+  long: "Podsync is a tool that converts video feeds (like YouTube) into downloadable audio files in podcast format. Configure your feeds and access the generated files from your local storage."
+category: "Media"
+developer: "pinano"
+website: "https://github.com/mxpv/podsync"
+repo: "https://github.com/mxpv/podsync"
+support: "https://github.com/mxpv/podsync/issues"
+dependencies: []
