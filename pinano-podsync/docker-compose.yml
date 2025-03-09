@@ -1,17 +1,15 @@
 services:
   app_proxy:
     environment:
-      APP_HOST: pinano-podsync_1
-      APP_PORT: 8145 # Internal port for the Podsync API (optional)
-
+      APP_HOST: pinano-podsync_server_1
+      APP_PORT: 8145
+    container_name: pinano-podsync_app_proxy_1
   server:
-    image: tdeutsch/podsync:latest # image for ARM
+    image: tdeutsch/podsync:latest
+    init: true
     volumes:
-      - ${APP_DATA_DIR}/data:/data # Where the podcasts will be stored
-      - ${APP_DATA_DIR}/config:/config # Where the config file will be stored
-    environment:
-      - CONFIG_FILE=/config/config.toml # Path to the config file
-    #ports:
-    #  - "8145:8080" # Expose the port (optional if not using the API)
+      - ${APP_DATA_DIR}/config/config.toml:/app/config.toml
+      - ${UMBREL_ROOT}/home/Downloads/podsync:/app/data
     restart: on-failure
     stop_grace_period: 1m
+    container_name: pinano-podsync_server_1

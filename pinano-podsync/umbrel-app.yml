@@ -2,7 +2,7 @@ manifestVersion: 1
 id: pinano-podsync
 name: Podsync
 tagline: "Turn YouTube feeds into downloadable podcasts"
-icon: "https://www.svgrepo.com/download/487670/podcast.svg" # Optional, include if you have an icon
+icon: "https://upload.wikimedia.org/wikipedia/commons/e/e7/Podcasts_%28iOS%29.svg" # Optional, include if you have an icon
 version: "2.3.0" # Use the latest Podsync version or your preferred one
 category: "Media"
 port: 8145
