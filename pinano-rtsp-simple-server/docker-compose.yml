@@ -1,0 +1,11 @@
+services:
+    rtsp-simple-server:
+        container_name: rtsp-simple-server
+        image: kerberos/rtsp-simple-server:latest-rpi
+        restart: always
+        network_mode: host
+        privileged: true
+        tmpfs: /dev/shm:exec
+        volumes:
+            - /run/udev:/run/udev:ro
+            - ./config.yml:/rtsp-simple-server.yml
