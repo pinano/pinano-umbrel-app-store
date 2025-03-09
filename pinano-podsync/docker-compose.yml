@@ -2,7 +2,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: pinano-podsync_server_1
-      APP_PORT: 8145
+      APP_PORT: 5123
     container_name: pinano-podsync_app_proxy_1
   server:
     image: tdeutsch/podsync:latest
