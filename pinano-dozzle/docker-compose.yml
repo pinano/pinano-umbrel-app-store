@@ -2,7 +2,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: pinano-dozzle_server_1
-      APP_PORT: 8080
+      APP_PORT: 5124
     container_name: pinano-dozzle_app_proxy_1
   server:
     image: amir20/dozzle:latest
