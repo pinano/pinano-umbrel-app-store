@@ -1,0 +1,26 @@
+manifestVersion: 1
+id: pinano-dozzle
+name: Dozzle
+tagline: "Simple Container Monitoring and Logging"
+icon: "icon.svg"
+version: "1.0.0"
+category: "System"
+port: 5124
+description: >-
+  Dozzle is a self-hosted application that runs in your own infrastructure, ensuring your logs remain private and secure.
+developer: Pinano
+website: https://pinano.org
+submitter: Pinano
+submission: https://github.com/pinano/pinano-umbrel-app-store/tree/main/pinano-dozzle
+repo: https://github.com/pinano/pinano-umbrel-app-store/tree/main/pinano-dozzle
+support: https://github.com/pinano/pinano-umbrel-app-store/tree/main/pinano-dozzle
+gallery:
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+releaseNotes: >-
+  Add what's new in the latest version of your app here.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
