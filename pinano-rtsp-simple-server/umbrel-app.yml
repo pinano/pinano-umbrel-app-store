@@ -1,0 +1,26 @@
+manifestVersion: 1
+id: pinano-rtsp-simple-server
+name: rtsp-simple-server
+tagline: "Turn a Raspberry Pi Camera module into a RTSP stream"
+icon: "https://rtspme.akamaized.net/img/main/camera.svg"
+version: "1.0.0"
+category: "Media"
+port: 5123
+description: >-
+  rtsp-simple-server turns a Raspberry Pi Camera module into a RTSP stream
+developer: Pinano
+website: https://pinano.org
+submitter: Pinano
+submission: https://github.com/pinano/pinano-umbrel-app-store/tree/main/pinano-rtsp-simple-server
+repo: https://github.com/pinano/pinano-umbrel-app-store/tree/main/pinano-rtsp-simple-server
+support: https://github.com/pinano/pinano-umbrel-app-store/tree/main/pinano-rtsp-simple-server
+gallery:
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+releaseNotes: >-
+  Add what's new in the latest version of your app here.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

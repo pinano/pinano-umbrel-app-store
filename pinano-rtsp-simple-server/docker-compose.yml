@@ -1,0 +1,18 @@
+services:
+  app_proxy:
+    environment:
+      APP_HOST: pinano-rtsp-simple-server_server_1
+      APP_PORT: 5125
+    container_name: pinano-rtsp-simple-server_app_proxy_1
+  server:
+    image: kerberos/rtsp-simple-server:latest-rpi
+    init: true
+    network_mode: host
+    privileged: true
+    tmpfs: /dev/shm:exec    
+    volumes:
+      - /run/udev:/run/udev:ro
+      - ./config.yml:/rtsp-simple-server.yml
+    restart: on-failure
+    stop_grace_period: 1m
+    container_name: pinano-rtsp-simple-server_server_1
