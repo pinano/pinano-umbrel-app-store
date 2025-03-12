@@ -11,8 +11,8 @@ services:
     privileged: true
     #tmpfs: /dev/shm:exec    
     volumes:
+      - ${APP_DATA_DIR}/config.yml:/rtsp-simple-server.yml      
       - /run/udev:/run/udev:ro
-      - ./config.yml:/rtsp-simple-server.yml
     restart: on-failure
     stop_grace_period: 1m
     container_name: pinano-rtsp-simple-server_server_1
