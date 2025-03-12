@@ -9,7 +9,7 @@ services:
     init: true
     network_mode: host
     privileged: true
-    #tmpfs: /dev/shm:exec    
+    tmpfs: /dev/shm:exec    
     volumes:
       - ${APP_DATA_DIR}/config.yml:/rtsp-simple-server.yml      
       - /run/udev:/run/udev:ro
