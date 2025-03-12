@@ -2,14 +2,14 @@ services:
   app_proxy:
     environment:
       APP_HOST: pinano-rtsp-simple-server_server_1
-      #APP_PORT: 
+      APP_PORT: 554
     container_name: pinano-rtsp-simple-server_app_proxy_1
   server:
     image: kerberos/rtsp-simple-server:latest-rpi
     init: true
     network_mode: host
     privileged: true
-    tmpfs: /dev/shm:exec    
+    #tmpfs: /dev/shm:exec    
     volumes:
       - /run/udev:/run/udev:ro
       - ./config.yml:/rtsp-simple-server.yml
