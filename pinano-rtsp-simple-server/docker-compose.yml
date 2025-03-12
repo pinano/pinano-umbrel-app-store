@@ -2,7 +2,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: pinano-rtsp-simple-server_server_1
-      APP_PORT: 5125
+      #APP_PORT: 
     container_name: pinano-rtsp-simple-server_app_proxy_1
   server:
     image: kerberos/rtsp-simple-server:latest-rpi

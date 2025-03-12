@@ -3,9 +3,9 @@ id: pinano-dozzle
 name: Dozzle
 tagline: "Simple Container Monitoring and Logging"
 icon: "https://dozzle.dev/logo.svg"
-version: "1.0.3"
+version: "1.0.4"
 category: "System"
-port: 5124
+port: 5123
 description: >-
   Dozzle is a self-hosted application that runs in your own infrastructure, ensuring your logs remain private and secure.
 developer: Pinano
