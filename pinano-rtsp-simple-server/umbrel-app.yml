@@ -1,9 +1,9 @@
 manifestVersion: 1
 id: pinano-rtsp-simple-server
-name: "RTSP Simple Server"
+name: "RTSP Server"
 tagline: "Turn a Raspberry Pi Camera module into a RTSP stream"
 icon: "https://rtspme.akamaized.net/img/main/camera.svg"
-version: "1.0.3"
+version: "1.0.4"
 category: "Media"
 port: 5125
 description: >-
