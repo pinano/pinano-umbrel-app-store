@@ -3,7 +3,7 @@ id: pinano-podsync
 name: Podsync
 tagline: "Turn YouTube feeds into downloadable podcasts"
 icon: "https://upload.wikimedia.org/wikipedia/commons/e/e7/Podcasts_%28iOS%29.svg"
-version: "1.0.2"
+version: "1.0.3"
 category: "Media"
 port: 5124
 description: >-
