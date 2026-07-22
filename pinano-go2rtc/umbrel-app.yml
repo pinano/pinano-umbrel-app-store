@@ -2,7 +2,7 @@ manifestVersion: 1
 id: pinano-go2rtc
 name: go2rtc
 tagline: "Ultimate camera streaming application"
-icon: "https://raw.githubusercontent.com/AlexxIT/go2rtc/master/web/favicon.png"
+icon: "https://raw.githubusercontent.com/pinano/pinano-umbrel-app-store/main/pinano-go2rtc/icon.svg"
 version: "1.9.8"
 category: "Media"
 port: 5126
@@ -17,7 +17,7 @@ submission: https://github.com/pinano/pinano-umbrel-app-store/tree/main/pinano-g
 repo: https://github.com/AlexxIT/go2rtc
 support: https://github.com/AlexxIT/go2rtc/issues
 gallery:
-  - https://raw.githubusercontent.com/AlexxIT/go2rtc/master/web/favicon.png
+  - https://raw.githubusercontent.com/pinano/pinano-umbrel-app-store/main/pinano-go2rtc/icon.svg
 releaseNotes: >-
   Initial release of go2rtc for Umbrel.
 dependencies: []
