@@ -1,0 +1,26 @@
+manifestVersion: 1
+id: pinano-changedetection
+name: ChangeDetection
+tagline: "Website change detection and web page monitoring"
+icon: "https://raw.githubusercontent.com/pinano/pinano-umbrel-app-store/main/pinano-changedetection/icon.svg"
+version: "0.45.2"
+category: "Utilities"
+port: 5127
+description: >-
+  ChangeDetection.io provides simple, open-source website change detection and web page monitoring.
+
+  Track price changes, restocks, news, document changes, and get notified via Discord, Telegram, Webhooks, Email, and more.
+developer: dgtlmoon
+website: https://changedetection.io
+submitter: Pinano
+submission: https://github.com/pinano/pinano-umbrel-app-store/tree/main/pinano-changedetection
+repo: https://github.com/dgtlmoon/changedetection.io
+support: https://github.com/dgtlmoon/changedetection.io/issues
+gallery:
+  - https://raw.githubusercontent.com/pinano/pinano-umbrel-app-store/main/pinano-changedetection/icon.svg
+releaseNotes: >-
+  Initial release of ChangeDetection.io for Umbrel.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

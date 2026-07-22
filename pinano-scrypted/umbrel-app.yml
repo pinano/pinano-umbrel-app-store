@@ -1,0 +1,24 @@
+manifestVersion: 1
+id: pinano-scrypted
+name: Scrypted
+tagline: "High-performance camera integration platform"
+icon: "https://raw.githubusercontent.com/pinano/pinano-umbrel-app-store/main/pinano-scrypted/icon.svg"
+version: "0.108.0"
+category: "Media"
+port: 5128
+description: >-
+  Scrypted is a high-performance video integration platform that connects your RTSP, UniFi, Hikvision, and IP cameras to Apple HomeKit (HomeKit Secure Video), Google Home, and Alexa.
+developer: koussavery
+website: https://www.scrypted.app
+submitter: Pinano
+submission: https://github.com/pinano/pinano-umbrel-app-store/tree/main/pinano-scrypted
+repo: https://github.com/koussavery/scrypted
+support: https://github.com/koussavery/scrypted/issues
+gallery:
+  - https://raw.githubusercontent.com/pinano/pinano-umbrel-app-store/main/pinano-scrypted/icon.svg
+releaseNotes: >-
+  Initial release of Scrypted for Umbrel.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
