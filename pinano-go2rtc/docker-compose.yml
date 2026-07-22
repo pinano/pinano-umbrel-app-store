@@ -1,0 +1,18 @@
+services:
+  app_proxy:
+    environment:
+      APP_HOST: pinano-go2rtc_server_1
+      APP_PORT: 1984
+    container_name: pinano-go2rtc_app_proxy_1
+  server:
+    image: alexxit/go2rtc:latest
+    init: true
+    ports:
+      - "8554:8554"
+      - "8555:8555/tcp"
+      - "8555:8555/udp"
+    volumes:
+      - ${APP_DATA_DIR}/data:/config
+    restart: on-failure
+    stop_grace_period: 1m
+    container_name: pinano-go2rtc_server_1

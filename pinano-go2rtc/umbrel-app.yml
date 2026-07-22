@@ -1,0 +1,26 @@
+manifestVersion: 1
+id: pinano-go2rtc
+name: go2rtc
+tagline: "Ultimate camera streaming application"
+icon: "https://raw.githubusercontent.com/AlexxIT/go2rtc/master/web/favicon.png"
+version: "1.9.8"
+category: "Media"
+port: 5126
+description: >-
+  go2rtc is an ultimate camera streaming application with support for RTSP, WebRTC, HomeKit, FFmpeg, RTMP, HLS, HTTP-FLV, and more.
+
+  Easily stream camera feeds, mix audio/video, and integrate with home automation systems.
+developer: AlexxIT
+website: https://github.com/AlexxIT/go2rtc
+submitter: Pinano
+submission: https://github.com/pinano/pinano-umbrel-app-store/tree/main/pinano-go2rtc
+repo: https://github.com/AlexxIT/go2rtc
+support: https://github.com/AlexxIT/go2rtc/issues
+gallery:
+  - https://raw.githubusercontent.com/AlexxIT/go2rtc/master/web/favicon.png
+releaseNotes: >-
+  Initial release of go2rtc for Umbrel.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
