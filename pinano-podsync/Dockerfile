@@ -2,10 +2,10 @@ FROM ghcr.io/mxpv/podsync:latest
 
 USER root
 
-# Instalar Deno, Python3, ffmpeg, curl y certificados
-RUN apk add --no-cache deno python3 ffmpeg ca-certificates curl
+# Instalar Node.js, Python3, ffmpeg, curl y certificados desde repositorios oficiales de Alpine
+RUN apk add --no-cache nodejs python3 ffmpeg ca-certificates curl
 
-# Descargar el binario oficial de yt-dlp y colocarlo directamente como youtube-dl y yt-dlp
+# Descargar el binario oficial y más reciente de yt-dlp
 RUN curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/youtube-dl && \
     chmod a+rx /usr/local/bin/youtube-dl && \
     cp /usr/local/bin/youtube-dl /usr/bin/youtube-dl && \
@@ -13,5 +13,7 @@ RUN curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o 
     cp /usr/local/bin/youtube-dl /usr/bin/yt-dlp && \
     chmod a+rx /usr/local/bin/youtube-dl /usr/bin/youtube-dl /usr/local/bin/yt-dlp /usr/bin/yt-dlp
 
-# Asegurarse de que no existan configs obsoletas
-RUN rm -rf /etc/yt-dlp
+# Configurar yt-dlp para que use Node.js automáticamente como JS runtime
+RUN mkdir -p /etc/yt-dlp && \
+    echo "--js-runtimes node" > /etc/yt-dlp/config && \
+    echo "--js-runtimes node" > /etc/yt-dlp.conf
