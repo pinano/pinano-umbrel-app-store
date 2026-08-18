@@ -3,7 +3,7 @@ id: pinano-podsync
 name: Podsync
 tagline: "Turn YouTube feeds into downloadable podcasts"
 icon: "https://upload.wikimedia.org/wikipedia/commons/e/e7/Podcasts_%28iOS%29.svg"
-version: "1.0.5"
+version: "1.0.6"
 category: "Media"
 port: 5124
 description: >-
@@ -21,7 +21,7 @@ gallery:
   - https://i.imgur.com/yyVG0Jb.jpeg
   - https://i.imgur.com/yyVG0Jb.jpeg
 releaseNotes: >-
-  Add what's new in the latest version of your app here.
+  Switch to official multi-arch podsync image containing Deno to fix YouTube download issues (HTTP 403 Forbidden).
 dependencies: []
 path: ""
 defaultUsername: ""
