@@ -5,8 +5,7 @@ services:
       APP_PORT: 8080
     container_name: pinano-podsync_app_proxy_1
   server:
-    build: .
-    image: pinano-podsync-server:latest
+    image: ghcr.io/pinano/podsync:latest
     init: true
     volumes:
       - ${UMBREL_ROOT}/home/Downloads/podsync/config.toml:/app/config.toml
