@@ -2,17 +2,16 @@ FROM ghcr.io/mxpv/podsync:latest
 
 USER root
 
-# Instalar Deno (runtime de JS nativo de yt-dlp), Python3, pip, ffmpeg y certificados
-RUN apk add --no-cache deno python3 py3-pip ffmpeg ca-certificates curl
+# Instalar Deno, Python3, ffmpeg, curl y certificados
+RUN apk add --no-cache deno python3 ffmpeg ca-certificates curl
 
-# Instalar la versión completa de yt-dlp con componentes EJS
-RUN pip3 install --break-system-packages --upgrade "yt-dlp[default]"
+# Descargar el binario oficial de yt-dlp y colocarlo directamente como youtube-dl y yt-dlp
+RUN curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/youtube-dl && \
+    chmod a+rx /usr/local/bin/youtube-dl && \
+    cp /usr/local/bin/youtube-dl /usr/bin/youtube-dl && \
+    cp /usr/local/bin/youtube-dl /usr/local/bin/yt-dlp && \
+    cp /usr/local/bin/youtube-dl /usr/bin/yt-dlp && \
+    chmod a+rx /usr/local/bin/youtube-dl /usr/bin/youtube-dl /usr/local/bin/yt-dlp /usr/bin/yt-dlp
 
-# Enlazar el binario para Podsync
-RUN ln -sf $(which yt-dlp) /usr/local/bin/youtube-dl && \
-    ln -sf $(which yt-dlp) /usr/bin/youtube-dl && \
-    ln -sf $(which yt-dlp) /usr/local/bin/yt-dlp && \
-    ln -sf $(which yt-dlp) /usr/bin/yt-dlp
-
-# Limpiar cualquier config previa para que use Deno por defecto
+# Asegurarse de que no existan configs obsoletas
 RUN rm -rf /etc/yt-dlp
