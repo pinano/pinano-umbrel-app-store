@@ -13,7 +13,7 @@ RUN curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o 
     cp /usr/local/bin/youtube-dl /usr/bin/yt-dlp && \
     chmod a+rx /usr/local/bin/youtube-dl /usr/bin/youtube-dl /usr/local/bin/yt-dlp /usr/bin/yt-dlp
 
-# Configurar yt-dlp para que use Node.js automáticamente como JS runtime
+# Configurar yt-dlp con Node.js y clientes web estables
 RUN mkdir -p /etc/yt-dlp && \
-    echo "--js-runtimes node" > /etc/yt-dlp/config && \
-    echo "--js-runtimes node" > /etc/yt-dlp.conf
+    printf -- "--js-runtimes node\n--extractor-args youtube:player_client=web_embedded,web\n" > /etc/yt-dlp/config && \
+    printf -- "--js-runtimes node\n--extractor-args youtube:player_client=web_embedded,web\n" > /etc/yt-dlp.conf
