@@ -21,7 +21,7 @@ gallery:
   - https://i.imgur.com/yyVG0Jb.jpeg
   - https://i.imgur.com/yyVG0Jb.jpeg
 releaseNotes: >-
-  Switch to official multi-arch podsync image containing Deno to fix YouTube download issues (HTTP 403 Forbidden).
+  Custom multi-arch image with Node.js JS runtime and latest yt-dlp to resolve YouTube extraction and HTTP 403 Forbidden errors.
 dependencies: []
 path: ""
 defaultUsername: ""
