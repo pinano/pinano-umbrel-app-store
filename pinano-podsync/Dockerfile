@@ -1,4 +1,4 @@
-FROM ghcr.io/mxpv/podsync:latest
+FROM ghcr.io/mxpv/podsync:nightly
 
 USER root
 
